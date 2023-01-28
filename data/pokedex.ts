@@ -19000,7 +19000,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 310,
 		color: "Green",
 		eggGroups: ["Field"],
-		gen: 9,
+		gen: 7,
 	},
 	// NOTE: PokeStar "formes" are not actually formes and thus do not have a formeOrder
 	pokestarsmeargle: {

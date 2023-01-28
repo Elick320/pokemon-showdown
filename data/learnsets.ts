@@ -93944,9 +93944,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			workup: ["7M"],
 			worryseed: ["7T", "6T", "5T", "4T"],
 		},
-		eventData: [
-			{generation: 5, level: 100, gender: "M", moves: ["woodhammer", "earthquake", "outrage", "stoneedge"], pokeball: "cherishball"},
-		],
 	},
 	pokestarsmeargle: {
 		eventData: [
