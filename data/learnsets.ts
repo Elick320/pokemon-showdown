@@ -88177,6 +88177,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			flatter: ["9L43"],
 			fling: ["9M"],
 			foulplay: ["9M"],
+			gigafuckhammer: ["9L0"],
 			gigatonhammer: ["9L0"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],

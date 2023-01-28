@@ -2388,6 +2388,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
 		shortDesc: "User cannot move next turn.",
 	},
+	gigafuckhammer: {
+		name: "Gigafuck Hammer",
+		shortDesc: "When all you has is a nail...",
+	},
 	gigatonhammer: {
 		name: "Gigaton Hammer",
 		shortDesc: "Cannot be used twice in a row.",

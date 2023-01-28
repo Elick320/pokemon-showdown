@@ -6652,6 +6652,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		contestType: "Tough",
 	},
+	gigafuckhammer: {
+		num: 901,
+		accuracy: 100,
+		basePower: 200,
+		category: "Physical",
+		name: "Gigafuck Hammer",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Steel",
+		contestType: "Tough",
+	},
 	gigatonhammer: {
 		num: 893,
 		accuracy: 100,
