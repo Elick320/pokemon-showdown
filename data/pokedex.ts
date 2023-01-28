@@ -7093,7 +7093,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	torterra: {
 		num: 389,
 		name: "Torterra",
-		types: ["Grass", "Ice"],
+		types: ["Grass", "Ground"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 95, atk: 109, def: 105, spa: 75, spd: 85, spe: 56},
 		abilities: {0: "Overgrow", H: "Shell Armor"},
@@ -18989,6 +18989,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoItem: "Shiny Stone",
 		eggGroups: ["Field"],
 		gen: 8,
+	},
+	torterrafumo: {
+		num: -69,
+		name: "Torterra-Fumo",
+		types: ["Grass"],
+		baseStats: {hp: 95, atk: 109, def: 105, spa: 75, spd: 85, spe: 56},
+		abilities: {0: "Overgrow", 1: "Flash Fire", H: "Flame Body"},
+		heightm: 2.2,
+		weightkg: 310,
+		color: "Green",
+		eggGroups: ["Field"],
+		gen: 9,
 	},
 	// NOTE: PokeStar "formes" are not actually formes and thus do not have a formeOrder
 	pokestarsmeargle: {
