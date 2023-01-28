@@ -7093,7 +7093,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	torterra: {
 		num: 389,
 		name: "Torterra",
-		types: ["Grass", "Ground"],
+		types: ["Grass", "Rock"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 95, atk: 109, def: 105, spa: 75, spd: 85, spe: 56},
 		abilities: {0: "Overgrow", H: "Shell Armor"},
