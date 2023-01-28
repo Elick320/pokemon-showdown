@@ -5870,6 +5870,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 		natDexTier: "RU",
 	},
+	tinkatonmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+		natDexTier: "OU",
+	},
 	charcadet: {
 		tier: "LC",
 	},
