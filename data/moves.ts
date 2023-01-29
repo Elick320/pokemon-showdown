@@ -12410,8 +12410,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 					return this.chainModify(1.3);
 			},
 		},
-			
-		},
 		secondary: null,
 		target: "all",
 		type: "Dark",
