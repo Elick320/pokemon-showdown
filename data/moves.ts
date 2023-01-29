@@ -12404,12 +12404,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 			onFieldEnd() {
 				this.add('-fieldend', 'Devious Constellation');
 			},
-			onSourceModifyDamage(damage, source, target, move) {
-				if (target.hp <= target.maxhp*0.75) {
-					this.debug('Devious Weakening');
-					return this.chainModify(1.3);
-				}
-			},
 		},
 		secondary: null,
 		target: "all",
