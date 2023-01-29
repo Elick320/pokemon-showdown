@@ -12400,17 +12400,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 					this.add('-fieldstart', 'move: Devious Constellation');
 				}
 			},
+			onBasePowerPriority: 1,
+			onBasePower(basePower, pokemon, target) {
+				if (target.hp <= target.maxhp * 0.75) {
+					this.debug('Devious Weakening');
+					return this.chainModify(1.3);
+				}
+			},
 			onFieldResidualOrder: 27,
 			onFieldResidualSubOrder: 7,
 			onFieldEnd() {
 				this.add('-fieldend', 'Devious Constellation');
-			},
-			onBasePowerPriority: 1,
-			onBasePower(basepower, attacker, defender, move) {
-				if (target.hp <= target.maxhp*0.75) {
-					this.debug('Devious Weakening');
-					return this.chainModify(1.3);
-				}
 			},
 		},
 		secondary: null,
