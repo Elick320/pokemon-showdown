@@ -12387,7 +12387,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 0,
 		category: "Status",
 		name: "Devious Constellation",
-		pp: 16,
+		pp: 10,
 		priority: 0,
 		flags: {nonsky: 1},
 		terrain: 'deviousconstellation',
@@ -12405,7 +12405,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			onFieldEnd() {
 				this.add('-fieldend', 'Devious Constellation');
 			},
-			onSourceModifyDamage(damage, source, target, move) {
+			onBasePowerPriority: 1,
+			onBasePower(basepower, attacker, defender, move) {
 				if (target.hp <= target.maxhp*0.75) {
 					this.debug('Devious Weakening');
 					return this.chainModify(1.3);
