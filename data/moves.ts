@@ -12390,7 +12390,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {nonsky: 1},
-		terrain: 'deviousconstellation',
+		psedoWeather: 'deviousconstellation',
 		condition: {
 			duration: 5,
 			onFieldStart(field, source, effect) {
