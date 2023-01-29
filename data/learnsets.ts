@@ -44684,6 +44684,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wrap: ["7L1", "6L1", "5L1", "4L1", "4S8", "3L1"],
 			zapcannon: ["7L61", "6L61", "5L81", "4L81", "4S4", "3L40"],
 			zenheadbutt: ["7T", "7L49", "6T", "6L49", "5T", "5L65", "4T", "4L65"],
+			deviousconstellation: ["7L50"],
 		},
 		eventData: [
 			{generation: 3, level: 30, shiny: 1, moves: ["taunt", "pursuit", "psychic", "superpower"]},
