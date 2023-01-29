@@ -12379,37 +12379,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			onFieldEnd() {
 				this.add('-fieldend', 'Misty Terrain');
 			},
-	},
-	deviousconstellation: {
-		num: 1200,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Devious Constellation",
-		pp: 16,
-		priority: 0,
-		flags: {nonsky: 1},
-		terrain: 'deviousconstellation',
-		condition: {
-			duration: 5,
-			onFieldStart(field, source, effect) {
-				if (effect?.effectType === 'Ability') {
-					this.add('-fieldstart', 'move: Devious Constellation', '[from] ability: ' + effect.name, '[of] ' + source);
-				} else {
-					this.add('-fieldstart', 'move: Devious Constellation');
-				}
-			},
-			onFieldResidualOrder: 27,
-			onFieldResidualSubOrder: 7,
-			onFieldEnd() {
-				this.add('-fieldend', 'Devious Constellation');
-			},
 		},
-		secondary: null,
-		target: "all",
-		type: "Dark",
-		zMove: {boost: {spd: 1}},
-		contestType: "Beautiful",
 	},
 	moonblast: {
 		num: 585,
