@@ -17330,7 +17330,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 2.4,
 		weightkg: 155.5,
 		color: "Pink",
-		eggGroups: ["Monster", "Grass"],
+		eggGroups: ["Fairy"],
 		requiredItem: "Tinkatite",
 	},
 	wiglett: {
