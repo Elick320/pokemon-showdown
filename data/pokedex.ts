@@ -5438,7 +5438,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Vigoroth",
 		evoLevel: 36,
 		eggGroups: ["Field"],
-		otherFormes: ["Salking-Mega"],
+		otherFormes: ["Slaking-Chaos"],
 		formeOrder: ["Slaking", "Slaking-Chaos"],
 	},
 	slakingchaos: {

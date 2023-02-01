@@ -21627,7 +21627,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 // Original Moves
 
-gigafuckhammer: {
+	gigafuckhammer: {
 		num: 1000,
 		accuracy: 100,
 		basePower: 200,
@@ -21644,7 +21644,7 @@ gigafuckhammer: {
 		type: "Steel",
 		contestType: "Tough",
 	},
-stalactitespear: {
+	stalactitespear: {
 		num: 1001,
 		accuracy: 100,
 		basePower: 70,
@@ -21659,7 +21659,7 @@ stalactitespear: {
 		type: "Rock",
 		contestType: "Cool",
 	},
-precisestrike: {
+	precisestrike: {
 		num: 1002,
 		accuracy: 100,
 		basePower: 80,
@@ -21681,7 +21681,7 @@ precisestrike: {
 		type: "Steel",
 		contestType: "Clever",
 	},
-buzzybug: {
+	buzzybug: {
 		num: 1003,
 		accuracy: 100,
 		basePower: 130,

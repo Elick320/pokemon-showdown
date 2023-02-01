@@ -9,6 +9,14 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Abomasite",
 		desc: "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
 	},
+	abomasitegalv: {
+		name: "Abomasite-Galv",
+		desc: "If held by an Abomasnow, this item allows it to Mega Evolve (into Abomasnow-Galv) in battle.",
+	},
+	tinkatite: {
+		name: "Tinkatite",
+		desc: "If held by an Tinkaton, this item allows it to Mega Evolve in battle.",
+	},
 	absolite: {
 		name: "Absolite",
 		desc: "If held by an Absol, this item allows it to Mega Evolve in battle.",

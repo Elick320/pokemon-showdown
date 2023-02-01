@@ -4,6 +4,26 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a very high chance for a critical hit.",
 		shortDesc: "Very high critical hit ratio.",
 	},
+	buzzybug: {
+		name: "Buzzy Bug",
+		desc: "Raises user's Sp. Def by 1 on turn 1. Hits turn 2.",
+		shortDesc: "Raises spD turn 1. Hits turn 2.",
+	},
+	stalactitespear: {
+		name: "Stalactite Spear",
+		desc: "Higher chance of critical hit.",
+		shortDesc: "High critical hit ratio.",
+	},
+	precisestrike: {
+		name: "Precise Strike",
+		desc: "High critical hit ratio, powered up by Sharpness, 30% chance of raising user's speed.",
+		shortDesc: "High critical hit ratio. 30% chance +speed.",
+	},
+	classicblizzard: {
+		name: "Classic Blizzard",
+		desc: "Hits neutrally against Fire types. 30% chance to Freeze.",
+		shortDesc: "Neutral vs Fire. 30% Freeze chance.",
+	},
 	absorb: {
 		name: "Absorb",
 		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",

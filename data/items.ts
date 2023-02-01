@@ -30,6 +30,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	abomasitegalv: {
+		name: "Abomasite-Galv",
+		spritenum: 575,
+		megaStone: "Abomasnow-Mega-Galv",
+		megaEvolves: "Abomasnow",
+		itemUser: ["Abomasnow"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 6000,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 	absolite: {
 		name: "Absolite",
 		spritenum: 576,
