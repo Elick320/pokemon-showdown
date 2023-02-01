@@ -6652,23 +6652,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		contestType: "Tough",
 	},
-	gigafuckhammer: {
-		num: 901,
-		accuracy: 100,
-		basePower: 200,
-		category: "Physical",
-		name: "Gigafuck Hammer",
-		pp: 15,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
-		secondary: {
-			chance: 30,
-			status: 'par',
-		},
-		target: "normal",
-		type: "Steel",
-		contestType: "Tough",
-	},
 	gigatonhammer: {
 		num: 893,
 		accuracy: 100,
@@ -21642,4 +21625,88 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+// Original Moves
+
+gigafuckhammer: {
+		num: 1000,
+		accuracy: 100,
+		basePower: 200,
+		category: "Physical",
+		name: "Gigafuck Hammer",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Steel",
+		contestType: "Tough",
+	},
+stalactitespear: {
+		num: 1001,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Stalactite Spear",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+		contestType: "Cool",
+	},
+precisestrike: {
+		num: 1002,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Precise Strike",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		critRatio: 2,
+		secondary: {
+			chance: 30,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Steel",
+		contestType: "Clever",
+	},
+buzzybug: {
+		num: 1003,
+		accuracy: 100,
+		basePower: 130,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Buzzy Bug",
+		pp: 10,
+		priority: 0,
+		flags: {charge: 1, protect: 1, mirror: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			this.boost({spd: 1}, attacker, attacker, move);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Tough",
+	},
 };
+
