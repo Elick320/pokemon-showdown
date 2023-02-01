@@ -75136,7 +75136,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["7M"],
 			uturn: ["7M"],
 			zenheadbutt: ["7T"],
-			stalactitespear ["7L30"],
+			stalactitespear: ["7L30"],
 		},
 	},
 	komala: {
