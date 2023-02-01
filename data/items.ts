@@ -42,7 +42,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 6000,
 		gen: 9,
-		isNonstandard: "Past",
 	},
 	absolite: {
 		name: "Absolite",
