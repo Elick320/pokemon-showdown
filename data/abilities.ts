@@ -1383,15 +1383,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 119,
 	},
-	frozenforest: {
-		onStart(source) {
-			this.field.setWeather('snow');
-			this.field.setTerrain('grassyterrain');
-		},
-		name: "Frozen Forest",
-		rating: 4,
-		num: 500,
-	},
 	fullmetalbody: {
 		onTryBoost(boost, target, source, effect) {
 			if (source && target === source) return;
@@ -5171,6 +5162,54 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 278,
 	},
 
+	//Scramble Originals
+	ironfistpg: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Iron Fist-PG boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Iron Fist-PG",
+		rating: 3,
+		num: 1089,
+	},
+	frozenforest: {
+		onStart(source) {
+			this.field.setWeather('snow');
+			this.field.setTerrain('grassyterrain');
+		},
+		name: "Frozen Forest",
+		rating: 4,
+		num: 1117,
+	},
+	miraclemulch: {
+		onStart(pokemon) {
+			if (
+				!this.field.setTerrain('grassyterrain') &&
+				this.field.isTerrain('grassyterrain') && pokemon.isGrounded()
+			) {
+				this.add('-activate', pokemon, 'ability: Miracle Mulch');
+			}
+		},
+		onTerrainChange(pokemon) {
+			if (pokemon === this.field.weatherState.source) return;
+			if (this.field.isTerrain('grassyterrain') && pokemon.isGrounded()) {
+				this.add('-activate', pokemon, 'ability: Miracle Mulch');
+			}
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (this.field.isTerrain('grassyterrain') && attacker.isGrounded()) {
+				this.debug('Miracle Mulch boost');
+				return this.chainModify([5461, 4096]);
+			}
+		},
+		name: "Miracle Mulch",
+		rating: 4.5,
+		num: 1289,
+	},
 	// CAP
 	mountaineer: {
 		onDamage(damage, target, source, effect) {
