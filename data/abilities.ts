@@ -4078,7 +4078,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		onAllyTryHitSide(target, source, move) {
 			if (move.flags['sound']) {
-				this.add('-immune', this.effectState.target, m] ability: Soundproof');
+				this.add('-immune', this.effectState.target, [from] ability: Soundproof');
 			}
 		},
 		isBreakable: true,
