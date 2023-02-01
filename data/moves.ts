@@ -21708,5 +21708,25 @@ buzzybug: {
 		type: "Normal",
 		contestType: "Tough",
 	},
+	classicblizzard: {
+		num: 1004,
+		accuracy: 90,
+		basePower: 120,
+		category: "Special",
+		name: "Classic Blizzard",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, wind: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Fire') return 0;
+		},
+		secondary: {
+			chance: 30,
+			status: 'frz',
+		},
+		target: "allAdjacentFoes",
+		type: "Ice",
+		contestType: "Beautiful",
+	},
 };
 
