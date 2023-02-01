@@ -1,3 +1,5 @@
+// ALL ORIGINAL ABILITIES SHOULD BE GIVEN AN ID OF 500+. GIVE TPC SOME BREATHING ROOM DOUBLE CHECK YOUR NUMBER ISN'T TAKEN
+
 /*
 
 Ratings and how they work:
@@ -31,7 +33,6 @@ Ratings and how they work:
 	ex. Imposter, Shadow Tag
 
 */
-
 export const Abilities: {[abilityid: string]: AbilityData} = {
 	noability: {
 		isNonstandard: "Past",
@@ -1381,6 +1382,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Frisk",
 		rating: 1.5,
 		num: 119,
+	},
+	frozenforest: {
+		onStart(source) {
+			this.field.setWeather('snow');
+			this.field.setTerrain('grassyterrain');
+		},
+		name: "Frozen Forest",
+		rating: 4,
+		num: 500,
 	},
 	fullmetalbody: {
 		onTryBoost(boost, target, source, effect) {
@@ -4068,7 +4078,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		onAllyTryHitSide(target, source, move) {
 			if (move.flags['sound']) {
-				this.add('-immune', this.effectState.target, '[from] ability: Soundproof');
+				this.add('-immune', this.effectState.target, m] ability: Soundproof');
 			}
 		},
 		isBreakable: true,
