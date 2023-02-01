@@ -2130,6 +2130,27 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		activate: "  [POKEMON] underwent a heroic transformation!",
 	},
 
+	// Scramble Originals
+	frozenforest: {
+		name: "Frozen Forest",
+		shortDesc: "On switch-in, this Pokemon summons Snow and Grassy Terrain.",
+		gen8: {
+			shortDesc: "On switch-in, this Pokemon summons Hail and Grassy Terrain.",
+		},
+	},
+	ironfistpg: {
+		name: "Iron Fist PG",
+		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's punch-based attacks have 1.5x power. Sucker Punch is not boosted.",
+	},
+	miraclemulch: {
+		name: "Miracle Mulch",
+		shortDesc: "On switch-in, summons Grassy Terrain. During Grassy Terrain, Atk is 1.3333x.",
+
+		start: "  [POKEMON] turned the ground into Grassy Terrain, nourishing its dynamic ecosystem!",
+		activate: "  [POKEMON] used the Grassy Terrain to nourish its dynamic ecosystem!",
+	},
+	
 	// CAP
 	mountaineer: {
 		name: "Mountaineer",
